@@ -1,8 +1,8 @@
 <template>
   <div id="three-container"></div>
-  <router-link to="/newModel">跳转</router-link>
-  <router-link to="/newModel2">跳转</router-link>
-  <button @click="onLogout">登出</button>
+  <router-link to="/newModel" class="login-btn1">点击跳转model1</router-link>
+  <router-link to="/newModel2" class="login-btn1">点击跳转model2</router-link>
+  <button  class="login-btn" @click="onLogout">登出</button>
   
 </template>
 
@@ -142,4 +142,26 @@ export default {
   height: 100vh;
   display: block;
 }
+.login-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .login-btn1 {
+    width: 100%;
+    padding: 10px;
+    background-color: #fa8023f1;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
 </style>
